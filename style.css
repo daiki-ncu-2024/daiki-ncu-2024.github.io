@@ -1,4 +1,205 @@
 @charset "utf-8";
-p {
-    color: red;
-  }
+
+html {
+    font-family: "Noto Sans JP", serif;
+    /*font-family: "Poppins", serif;
+    font-family: "Dancing Script", serif;
+    https://youtu.be/GXu-7d3yA_U?si=-x9iVVxjvO1E2Sqc
+    ここから参考にしている
+    */
+}
+.pop{font-family: "Poppins", serif;}
+.container {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+    position: relative; /*これとposition: absoluteを組み合わせるkことで、画像を一つの塊のように浮かせることができる*/
+}
+
+.flex{/*要素を横並びにできるもの*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*ヘッダー*/
+header{
+    padding: 27px 0;
+}
+.logo{
+    font-size: 24px;
+    font-weight: 700;
+}
+.logo span{
+    color: chartreuse;
+}
+.header_menu li{
+    margin-left: 40px;
+}
+.header_menu li a{
+    transition: .3s;
+}
+.header_menu li a:hover{
+    color: chartreuse;
+    transition: .3s;
+}
+/*メイン*/
+
+#hero {
+    background-image: url(../mypage/経営情報.webp);
+    background-position: center;
+    background-size: cover;
+    height: 540px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+    overflow: hidden;
+}
+#hero::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    z-index: 1;
+}
+.hero_inner{
+    z-index: 2;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+.hero_inner p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.hero_inner h1{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+/*コンセプト*/
+#year{
+    margin-bottom: 120px;
+}
+.title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #80BA4A;
+    margin-bottom: 40px;
+}
+#concept h3{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+.column-2{
+    width: 48%;
+}
+.text{
+    line-height: 2;
+}
+.year-img{
+    background-image: url(../mypage/AIai_241219A019-SL_TP_V.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 340px;
+    border-radius: 20px;
+}
+.heading{
+    font-family: "Dancing Script", serif;
+    font-size: 150px;
+    font-weight: 700;
+    color: #80BA4A;
+    position: absolute;
+    opacity: 0.1;
+    top: 0;
+    right: 0;
+    transform: translateY(-30%);
+    z-index: -1;
+}
+/*メニュー*/
+#menu{
+    margin-bottom: 120px;
+}
+.menu_inner{
+    margin-bottom: 40px;
+    position: relative;
+}
+.column-40{
+    width: 40%;
+}/*この上下の2つのものを使うと画面の比率を変えることができる*/
+.column-55{
+    width: 55%;
+}
+#menu h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+/*アクセス*/
+#Access{
+    margin-bottom: 120px;
+}
+#Access dl{
+    max-width: 900px;
+    margin-left: auto;
+}
+#Access dt{
+    width: 30%;
+    padding: 48px 0;
+    font-weight: 500;
+    border-bottom: solid 1px #d2ecba;
+}
+#Access dd{
+    width: 70%;
+    padding: 48px 0;
+    border-bottom: solid 1px #d2ecba;
+}
+/*ボトム*/
+.column-a{
+    background-image: url(../mypage/経営情報.webp);
+    background-position: center;
+    background-size: cover;
+    width: 24%;
+    height: 270px;
+    border-radius: 20px;
+}
+.column-b{
+    background-image: url(../mypage/経営情報.webp);
+    background-position: center;
+    background-size: cover;
+    width: 18%;
+    height: 270px;
+    border-radius: 20px;
+}.column-c{
+    background-image: url(../mypage/経営情報.webp);
+    background-position: center;
+    background-size: cover;
+    width: 24%;
+    height: 270px;
+    border-radius: 20px;
+}.column-d{
+    background-image: url(../mypage/経営情報.webp);
+    background-position: center;
+    background-size: cover;
+    width: 28%;
+    height: 270px;
+    border-radius: 20px;
+}
+
+
+
+/*フッター*/
+footer{
+    text-align: center;
+    margin: 90px 0;
+}
+.copyright{
+    font-size: 12px;
+    margin-top: 40px;
+}

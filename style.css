@@ -160,39 +160,6 @@ header{
     padding: 48px 0;
     border-bottom: solid 1px #d2ecba;
 }
-/*ボトム*/
-.column-a{
-    background-image: url(../mypage/経営情報.webp);
-    background-position: center;
-    background-size: cover;
-    width: 24%;
-    height: 270px;
-    border-radius: 20px;
-}
-.column-b{
-    background-image: url(../mypage/経営情報.webp);
-    background-position: center;
-    background-size: cover;
-    width: 18%;
-    height: 270px;
-    border-radius: 20px;
-}.column-c{
-    background-image: url(../mypage/経営情報.webp);
-    background-position: center;
-    background-size: cover;
-    width: 24%;
-    height: 270px;
-    border-radius: 20px;
-}.column-d{
-    background-image: url(../mypage/経営情報.webp);
-    background-position: center;
-    background-size: cover;
-    width: 28%;
-    height: 270px;
-    border-radius: 20px;
-}
-
-
 
 /*フッター*/
 footer{
@@ -210,11 +177,6 @@ footer{
 }
 
 .year-img{
-    /*background-image: url(スマートシティ.webp);
-    background-position: center;
-    background-size: cover;
-    height: 340px;
-    border-radius: 20px;*/
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2列に分割 */
     gap: 20px; /* 画像間の余白 */
